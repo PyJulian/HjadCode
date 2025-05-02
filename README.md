@@ -1,5 +1,8 @@
 # HjadCode information
 
+The executable name is <code>hjad</code><br>
+You can call the help page by entering <code>hjad --help</code>
+
 ## How to install Hjadcod?
 
 ### Via the Terminal
