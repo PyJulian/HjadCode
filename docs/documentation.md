@@ -1,8 +1,10 @@
 # HjadCode Documentation
 
-Here you will read what hjadcode functions exist and other stuff to start with this useless language
+Here you will read what hjadcode functions exist and other stuff to start with this useless language.<br>
+**HjadCod2 is NOT released yet, I've decided to update the docs before releasing**
 
 ## Default Functions
+
 ### _{comments}_
 You can use # and $ for comments, $ should be extra highlighted.<br>
 Example: <code># I'm a normal comment</code>, <code>$ I'm a cooler comment</code>
@@ -30,6 +32,34 @@ Example: <code>debug</code>
 _You call maths by just entering math equations_
 You can just put any math down and it will save the result to the first open memory slot.<br>
 Example: <code>1+4</code>, <code>5^24+(5-2)</code>, <code>1%(5*9)</code>
+
+### sleep _{time}_
+_Added in HjadCod2_
+Delays code exection for _time_ many seconds.<br>
+Example: <code>sleep 1</code>, <code>sleep 5.3</code>
+
+## Core Functions
+_Core Functions are called by the "core" tag and can only be used by hjad versions higher then 2_
+
+### core defaults
+_Added in HjadCod2_
+Resets all core values to the default ones.<br>
+Example: <code>core defaults</code>
+
+### core condition _{value}_
+_Added in HjadCod2_
+If "False" is returned from any function like _If_, it returns the value you set it to. (Default Value: "False")<br>
+Example: <code>core condition Nuh Uh</code>, <code>core condition Thats Not True</code>
+
+### core copyright _{message}_
+_Added in HjadCod2_
+Shows a copyright message at the start of the execution, the © is already added. (Default Value: _None_)<br>
+Example: <code>mysoftware, All Rights Served</code>, <code>mysoftware, MIT License</code>
+
+### core halt
+_Added in HjadCod2_
+Quits Code Execution, I know sounds kinda misleading for "halting" xd.<br>
+Example: <code>core halt</code>
 
 ## Memory Management
 _Memory Functions are called by the "mem" tag_
@@ -69,7 +99,22 @@ Example: <code>conf Yes No Do you wish to continue?</code>
 ## Statements
 ### if mem _{memory slot}_ check _{value}_ _{true return}_
 Compares a memory value with one you gave it and saves the result to the next open memory slot.<br>
-If its True it will return the true return value you gave it, if its false it just returns False.<br>
+If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
+Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+
+### if mem _{memory slot}_ not _{value}_ _{true return}_
+Compares a memory value with one you gave it and checks if its not equal to each, saves the result to the next open memory slot.<br>
+If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
+Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+
+### if mem _{memory slot}_ bits _{number value}_ _{true return}_
+Compares a memory value with one you gave it and checks if its length is higher then the number value you gave it, saves the result to the next open memory slot.<br>
+If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
+Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+
+### if mem _{memory slot}_ hex _{hex value (0xFF}_ _{true return}_
+Compares a memory value with one you gave it and checks if its equal to its hexadecimal value, saves the result to the next open memory slot.<br>
+If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
 Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
 
 _© 2025 HjadCode Family. All Rights Reserved_
