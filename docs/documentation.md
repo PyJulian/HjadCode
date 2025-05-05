@@ -120,4 +120,14 @@ Compares a memory value with one you gave it and checks if its equal to its hexa
 If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
 Example: <code>if mem 1 hex 0xFF Thats equal 255</code>, <code>if mem 3 hex 0x01 Value equal 1</code>
 
+
+## File System
+_File System Functions are called by the "fs" tag and can only be used by hjad versions higher then 2_
+
+### fs sav mem _{memory slot}_ _{path + filename}__
+_Added in HjadCod2_<br>
+Creates an file (overwriting mode if it exists already) and saves data from any memory slot to it.<br>
+**NOTE: HjadCode has its own folder for files thats always available at path <code>~/.hjadcode</code>**<br>
+Example: <code>fs sav mem 1 ~/Documents/hjadfile.txt</code>, <code>fs sav mem 1 ~/.hjadcode/passwords.dat</code>
+
 _© 2025 HjadCode Family. All Rights Reserved_
