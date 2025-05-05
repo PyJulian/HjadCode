@@ -14,7 +14,7 @@ Restart your terminal after install
 HjadCode is supported by these operating systems:
 <ul>
   <li>MacOS</li>
-  <li>Linux (Not Tested)</li>
+  <li>Linux (Only Works for compiling code, not running it)</li>
 </ul>
 
 ## Compiling Information
@@ -43,6 +43,6 @@ No
 Yes
 
 **What is hjad written in?**
-In Bash (aka Shell) but I've exported it into a .bin file so github doesn't show that its fully made in shell.
+In Bash (aka Shell) but I've exported it into a .bin file so github doesn't show that its fully made in shell :(
 
 _© 2025 HjadCode Family. All Rights Reserved_
