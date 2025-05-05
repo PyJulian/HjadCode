@@ -34,7 +34,7 @@ You can just put any math down and it will save the result to the first open mem
 Example: <code>1+4</code>, <code>5^24+(5-2)</code>, <code>1%(5*9)</code>
 
 ### sleep _{time}_
-_Added in HjadCod2_
+_Added in HjadCod2_<br>
 Delays code exection for _time_ many seconds.<br>
 Example: <code>sleep 1</code>, <code>sleep 5.3</code>
 
@@ -42,22 +42,22 @@ Example: <code>sleep 1</code>, <code>sleep 5.3</code>
 _Core Functions are called by the "core" tag and can only be used by hjad versions higher then 2_
 
 ### core defaults
-_Added in HjadCod2_
+_Added in HjadCod2_<br>
 Resets all core values to the default ones.<br>
 Example: <code>core defaults</code>
 
 ### core condition _{value}_
-_Added in HjadCod2_
+_Added in HjadCod2_<br>
 If "False" is returned from any function like _If_, it returns the value you set it to. (Default Value: "False")<br>
 Example: <code>core condition Nuh Uh</code>, <code>core condition Thats Not True</code>
 
 ### core copyright _{message}_
-_Added in HjadCod2_
+_Added in HjadCod2_<br>
 Shows a copyright message at the start of the execution, the © is already added. (Default Value: _None_)<br>
 Example: <code>mysoftware, All Rights Served</code>, <code>mysoftware, MIT License</code>
 
 ### core halt
-_Added in HjadCod2_
+_Added in HjadCod2_<br>
 Quits Code Execution, I know sounds kinda misleading for "halting" xd.<br>
 Example: <code>core halt</code>
 
@@ -103,18 +103,21 @@ If its True it will return the true return value you gave it, if its false it re
 Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
 
 ### if mem _{memory slot}_ not _{value}_ _{true return}_
+_Added in HjadCod2_<br>
 Compares a memory value with one you gave it and checks if its not equal to each, saves the result to the next open memory slot.<br>
 If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
-Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+Example: <code>if mem 1 not Confirm Action canceled</code>, <code>if mem 8 not 12 Slot 8 is NOT equal to 12</code>
 
 ### if mem _{memory slot}_ bits _{number value}_ _{true return}_
+_Added in HjadCod2_<br>
 Compares a memory value with one you gave it and checks if its length is higher then the number value you gave it, saves the result to the next open memory slot.<br>
 If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
-Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+Example: <code>if mem 4 bits 2 Slot 4's value has a bigger length of 2</code>
 
 ### if mem _{memory slot}_ hex _{hex value (0xFF}_ _{true return}_
+_Added in HjadCod2_<br>
 Compares a memory value with one you gave it and checks if its equal to its hexadecimal value, saves the result to the next open memory slot.<br>
 If its True it will return the true return value you gave it, if its false it returns the the value stored in the condition core.<br>
-Example: <code>if mem 1 check Yes Right Answer</code>, <code>if mem 3 check Confirm Action Confirmed</code>
+Example: <code>if mem 1 hex 0xFF Thats equal 255</code>, <code>if mem 3 hex 0x01 Value equal 1</code>
 
 _© 2025 HjadCode Family. All Rights Reserved_
