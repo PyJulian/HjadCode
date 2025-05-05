@@ -2,11 +2,12 @@
 
 Turns your pans into shitty electric drums.
 
-## Requirements
+## You need
 - HjadCod2
 - MacOS
 - Microbit V2
 - Cables
+- Pan with lid
 - Long spring (optional)
 
 ## How to use
