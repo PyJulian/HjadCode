@@ -42,4 +42,7 @@ No
 **Do I have to shut up?**
 Yes
 
+**What is hjad written in?**
+In Bash (aka Shell) but I've exported it into a .bin file so github doesn't show that its fully made in shell.
+
 _© 2025 HjadCode Family. All Rights Reserved_
