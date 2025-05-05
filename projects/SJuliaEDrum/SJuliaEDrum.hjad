@@ -3,7 +3,6 @@
 
 use 2
 
-
 $ Init Values and decode the epic values so mp3's are valid since they're decrypted using base64, first time using AHS aswel since I fixed it in HjadCod2 lol
 $ So this new one removed half stuff because I was overloading the system
 
