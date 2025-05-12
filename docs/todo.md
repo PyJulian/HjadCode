@@ -10,11 +10,13 @@ I put my idea's down here I want to add
     <li>Copyright (Done)</li>
     <li>Halt (Done)</li>
   </ul>
-  <li>File System (1/3)</li>
+  <li>File System (Done)</li>
   <ul>
     <li>Create File (Done)</li>
+    <li>Append File (Done) (No Wiki Yet)</li>
     <li>Read File</li>
-    <li>Delete File</li>
+    <li>Delete File (Done) (No Wiki Yet)</li>
+    <li>Set core output path</li>
   </ul>
   <li>Prompting Packet Expansion</li>
   <ul>
