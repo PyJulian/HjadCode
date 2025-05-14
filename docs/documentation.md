@@ -96,6 +96,21 @@ Example: <code>msg Hi I'm a user window</code>, <code>msg Welcome to my Software
 Prompts the user with a choice, result is saved to the first open memory slot.<br>
 Example: <code>conf Yes No Do you wish to continue?</code>
 
+### inp _{message}_
+_Added in HjadCod2_<br>
+Prompts the user with an text input window, result is saved to the first open memory slot.<br>
+Example: <code>inp Enter your name</code>, <code>inp Enter text to save</code>
+
+### pass _{message}_
+_Added in HjadCod2_<br>
+Exact same function as the <code>inp</code> command except text input is hidden, result is saved to the first open memory slot.<br>
+Example: <code>inp Enter your account key</code>, <code>inp Enter your password</code>
+
+### notif _{message}_
+_Added in HjadCod2_<br>
+Sends the user a notification<br>
+Example: <code>notif Reminder! Do your taxes</code>, <code>notif Hi there</code>
+
 ## Statements
 ### if mem _{memory slot}_ check _{value}_ _{true return}_
 Compares a memory value with one you gave it and saves the result to the next open memory slot.<br>
@@ -124,10 +139,28 @@ Example: <code>if mem 1 hex 0xFF Thats equal 255</code>, <code>if mem 3 hex 0x01
 ## File System
 _File System Functions are called by the "fs" tag and can only be used by hjad versions higher then 2_
 
-### fs sav mem _{memory slot}_ _{path + filename}__
+### fs sav mem _{memory slot}_ _{filename}__
 _Added in HjadCod2_<br>
-Creates an file (overwriting mode if it exists already) and saves data from any memory slot to it.<br>
+Creates an file (overwrites) and saves data from any memory slot to it.<br>
 **NOTE: HjadCode has its own folder for files thats always available at path <code>~/.hjadcode</code>**<br>
 Example: <code>fs sav mem 1 ~/Documents/hjadfile.txt</code>, <code>fs sav mem 1 ~/.hjadcode/passwords.dat</code>
+
+### fs append mem _{memory slot}_ _{filename}__
+_Added in HjadCod2_<br>
+Appends memory data to an file.<br>
+**NOTE: HjadCode has its own folder for files thats always available at path <code>~/.hjadcode</code>**<br>
+Example: <code>fs append mem 1 ~/Documents/hjadfile.txt</code>, <code>fs append mem 1 ~/.hjadcode/passwords.dat</code>
+
+### fs read _{filename}__
+_Added in HjadCod2_<br>
+Reads a file and stores the result in the next available memory slot<br>
+**NOTE: HjadCode has its own folder for files thats always available at path <code>~/.hjadcode</code>**<br>
+Example: <code>fs read ~/Documents/hjadfile.txt</code>, <code>fs read ~/.hjadcode/passwords.dat</code>
+
+### fs delete _{filename}__
+_Added in HjadCod2_<br>
+Deletes an file.<br>
+**NOTE: HjadCode has its own folder for files thats always available at path <code>~/.hjadcode</code>**<br>
+Example: <code>fs del ~/Documents/hjadfile.txt</code>, <code>fs del ~/.hjadcode/passwords.dat</code>
 
 _© 2025 HjadCode Family. All Rights Reserved_
